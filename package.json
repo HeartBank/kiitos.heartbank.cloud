@@ -1,0 +1,25 @@
+{
+  "name": "blockchain.heartbank.cloud",
+  "version": "1.0.0",
+  "description": "Super Blockchain",
+  "main": "kiitos.mjs",
+  "scripts": {
+    "start": "nodemon kiitos.mjs",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeartBank/blockchain.heartbank.cloud.git"
+  },
+  "author": "THonly™",
+  "license": "HeartBank®",
+  "bugs": {
+    "url": "https://github.com/HeartBank/blockchain.heartbank.cloud/issues"
+  },
+  "homepage": "https://github.com/HeartBank/blockchain.heartbank.cloud#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.6"
+  }
+}

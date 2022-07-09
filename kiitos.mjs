@@ -1,9 +1,14 @@
-import http from 'http';
+import fs from 'fs';
+import https from 'https';
 import express from 'express';
 import cors from 'cors';
 import fetch from 'node-fetch';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+
+// expires on 2022-10-02
+const cert = fs.readFileSync('private/fullchain.pem');
+const key = fs.readFileSync('private/privkey.pem');
 
 const bot = express();
 bot.use(express.static('public'));
@@ -19,4 +24,4 @@ bot.post('/', (req, res) => {
     res.json(req.body);
 });
 
-http.createServer(bot).listen(333);
+https.createServer({cert, key}, bot).listen(333);

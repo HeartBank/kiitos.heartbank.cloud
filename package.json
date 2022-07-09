@@ -1,22 +1,25 @@
 {
-  "name": "blockchain.heartbank.cloud",
+  "name": "kiitos.heartbank.cloud",
   "version": "1.0.0",
-  "description": "Super Blockchain",
+  "description": "Non-Zero-Sum Blockchain",
   "main": "kiitos.mjs",
   "scripts": {
-    "start": "nodemon kiitos.mjs",
-    "test": ""
+    "start": "sudo nodemon kiitos.mjs",
+    "test": "",
+    "renew": "sudo certbot --manual --preferred-challenges dns certonly -d dns.heartbank.cloud",
+    "copy1": "sudo cp /etc/letsencrypt/live/dns.heartbank.cloud/fullchain.pem /Users/heartbank/Desktop/HeartBank®/Heart\\ Bank\\ Trust/dApps/heartbank.cloud/kiitos.heartbank.cloud",
+    "copy2": "sudo cp /etc/letsencrypt/live/dns.heartbank.cloud/privkey.pem /Users/heartbank/Desktop/HeartBank®/Heart\\ Bank\\ Trust/dApps/heartbank.cloud/kiitos.heartbank.cloud"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HeartBank/blockchain.heartbank.cloud.git"
+    "url": "git+https://github.com/HeartBank/kiitos.heartbank.cloud.git"
   },
   "author": "THonly™",
   "license": "HeartBank®",
   "bugs": {
-    "url": "https://github.com/HeartBank/blockchain.heartbank.cloud/issues"
+    "url": "https://github.com/HeartBank/kiitos.heartbank.cloud/issues"
   },
-  "homepage": "https://github.com/HeartBank/blockchain.heartbank.cloud#readme",
+  "homepage": "https://github.com/HeartBank/kiitos.heartbank.cloud#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
